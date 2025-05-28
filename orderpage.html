@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MR.COFFEE - Order</title>
+  <link rel="shortcut icon" href="assets/icon-mrcoffee.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <header>
+      <nav class="navbar">
+        <a href="index.html">
+          <img src="assets/logo-mrcoffee.png" alt="Coffee Logo" class="logo">
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rewardpage.html" class="active">Rewards</a></li>
+          <li><a href="aboutpage.html">About Us</a></li>
+          <li><a href="menupage.html">Menu</a></li>
+          <li><a href="orderpage.html">Order</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <section class="order-form">
+    <h2>Place Your Order</h2>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your full name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="you@gmail.com">
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" placeholder="Your address"></textarea>
+      </div>
+    </div>
+    
+    <div class="form-row">
+      <div class="form-group">
+        <label for="product">Product:</label>
+        <select id="product">  
+          <option value="">--Select--</option>
+          <option value="originalespresso">Original Espresso</option>
+          <option value="brownsugaroatmilk">Brown Sugar Oatmilk</option>
+          <option value="chocolatteorange">Chocolate Orange</option>
+          <option value="originalfrappe">Original Frappe</option>
+          <option value="matchafrappe">Matcha Frappe</option>
+          <option value="caramelfrappucino">Caramel Frappucino</option>
+          <option value="brewedcoffee">Brewed Coffee</option>
+          <option value="lowcaloriebrewed">Low Calorie Brewed</option>
+          <option value="caramelhazelnut">Caramel Hazelnut</option>
+          <option value="croissant">Croissant</option>
+          <option value="cromboloni">Cromboloni</option>
+          <option value="donut">Donut</option>
+          <option value="pretzel">Pretzel</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="addons">Add-ons:</label>
+        <select id="addons">        
+          <option value="">--Select--</option>
+          <option value="extra shot">Extra Shot</option>
+          <option value="whipped cream">Whipped Cream</option>
+          <option value="whipped cream">Soy Milk</option>
+          <option value="syrup">Syrup</option>
+          <option value="less sugar">Less Sugar</option>
+          <option value="extra ice">Extra Ice</option>
+          <option value="none">None</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="total">Item Price (Rp):</label>
+        <input type="text" id="total" placeholder="0" readonly>
+      </div>
+    </div>
+    
+      <button type="button" class="btn" onclick="handleAddToCart()">Add to Cart</button>
+    </form>
+    <div id="cart-section" class="cart-section">
+      <h3>Your Cart</h3>
+      <p id="empty-cart-message" class="empty-cart">Your cart is empty.</p>
+      <ul id="cart-items"></ul>
+      <button onclick="clearCart()" class="remove-btn" style="margin-top: 1em;">Clear Cart</button>
+      <p><strong>Total Items:</strong> <span id="cart-count">0</span></p>
+      <p><strong>Total Price (Rp):</strong> <span id="cart-total">0</span></p>
+
+      <button id="orderNowBtn" type="button" class="btn">Order Now</button>
+
+    </div>
+    
+  </section>
+
+  <div id="orderModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Order Received!</h2>
+      <p>Thank you for your order! We will process it shortly.</p>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 MR.COFFEE. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

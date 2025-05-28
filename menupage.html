@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MR.COFFEE - Menu</title>
+  <link rel="shortcut icon" href="assets/icon-mrcoffee.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html">
+        <img src="assets/logo-mrcoffee.png" alt="Coffee Logo" class="logo">
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rewardpage.html" class="active">Rewards</a></li>
+        <li><a href="aboutpage.html">About Us</a></li>
+        <li><a href="menupage.html">Menu</a></li>
+        <li><a href="orderpage.html">Order</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="menu-filter">
+    <h2>Our Menu</h2>
+    <div class="filter-buttons">
+      <button onclick="filterMenu('')">All</button>
+      <button onclick="filterMenu('espresso')">Espresso</button>
+      <button onclick="filterMenu('frappe')">Frappe</button>
+      <button onclick="filterMenu('brewed')">Brewed</button>
+      <button onclick="filterMenu('bread')">Bread</button>
+    </div>
+  </section>
+
+  <section class="menu-items" id="menuItems">
+    <div class="product-card" data-category="espresso">
+      <img src="assets/coffee-with-frothing-pouring-from-espresso-machine.jpg" alt="Espresso">
+      <h4>Original Espresso</h4>
+      <p>Rp25.000</p>
+      <a href="orderpage.html" class="btn">Order Now</a>
+    </div>
+    <div class="product-card" data-category="espresso">
+      <img src="assets/brownsugar-oat.jpg" alt="Espresso">
+      <h4>Brown Sugar Oatmilk</h4>
+      <p>Rp28.000</p>
+      <a href="orderpage.html" class="btn">Order Now</a>
+    </div>
+    <div class="product-card" data-category="espresso">
+      <img src="assets/darkchoco-orange.jpg" alt="Espresso">
+      <h4>Chocolatte Orange</h4>
+      <p>Rp30.000</p>
+      <a href="orderpage.html" class="btn">Order Now</a>
+    </div>
+    <div class="product-card" data-category="frappe">
+      <img src="assets/aromatic-frappuccino-table.jpg" alt="Frappe">
+      <h4>Original Frappe</h4>
+      <p>Rp30.000</p>
+      <a href="orderpage.html" class="btn">Order Now</a>
+    </div>
+    <div class="product-card" data-category="frappe">
+      <img src="assets/matcha-frappe.jpg" alt="Frappe">
+      <h4>Matcha Frappe</h4>
+      <p>Rp35.000</p>
+      <a href="orderpage.html" class="btn">Order Now</a>
+    </div>
+    <div class="product-card" data-category="frappe">
+      <img src="assets/caramel-frappucino.jpg" alt="Frappe">
+      <h4>Caramel Frappucino</h4>
+      <p>Rp35.000</p>
+      <a href="orderpage.html" class="btn">Order Now</a>
+    </div>
+  <div class="product-card" data-category="brewed">
+      <img src="assets/front-view-coffee-poured-glass.jpg" alt="Brewed">
+      <h4>Brewed Coffee</h4>
+      <p>Rp20.000</p>
+      <a href="orderpage.html" class="btn">Order Now</a>
+    </div>
+    <div class="product-card" data-category="brewed">
+      <img src="assets/lowcal-brew.jpg" alt="Brewed">
+      <h4>Low Calorie Brewed</h4>
+      <p>Rp20.000</p>
+      <a href="orderpage.html" class="btn">Order Now</a>
+    </div>
+    <div class="product-card" data-category="brewed">
+      <img src="assets/caramel-hazelnut.jpg" alt="Brewed">
+      <h4>Caramel Hazelnut</h4>
+      <p>Rp28.000</p>
+      <a href="orderpage.html" class="btn">Order Now</a>
+    </div>
+  <div class="product-card" data-category="bread">
+      <img src="assets/french-croissants-cardboard-box-cloth.jpg" alt="Croissant">
+      <h4>Croissant</h4>
+      <p>Rp20.000</p>
+      <a href="orderpage.html" class="btn">Order Now</a>  
+    </div>
+    <div class="product-card" data-category="bread">
+      <img src="assets/cromboloni.jpg" alt="Cromboloni">
+      <h4>Cromboloni</h4>
+      <p>Rp25.000</p>
+      <a href="orderpage.html" class="btn">Order Now</a>  
+    </div>
+    <div class="product-card" data-category="bread">
+      <img src="assets/Maple Glazed Donuts [1_5 Hours] – Chasety.jpg" alt="Donut">
+      <h4>Donut</h4>
+      <p>Rp12.000</p>
+      <a href="orderpage.html" class="btn">Order Now</a>
+    </div>
+    <div class="product-card" data-category="bread">
+      <img src="assets/top-view-pretzels-breakfast.jpg" alt="Pretzel">
+      <h4>Pretzel</h4>
+      <p>Rp20.000</p>
+      <a href="orderpage.html" class="btn">Order Now</a> 
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MR.COFFEE. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
